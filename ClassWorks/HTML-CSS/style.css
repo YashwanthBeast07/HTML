@@ -1,0 +1,23 @@
+.html{
+
+    font-style: italic;
+}
+
+.java{
+    font-style: normal
+}
+
+.common{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"]{
+    background-color: aqua;
+}
+input[type="password"]::placeholder{
+    color: aquamarine;
+}

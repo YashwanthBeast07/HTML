@@ -1,0 +1,25 @@
+div{
+    box-shadow: 0px 0px 15px;
+    width: 20%;
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+input[type="submit"]{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+input:hover{
+    box-shadow: 0px 0px 10px red;
+}
+input[type="submit"]:hover{
+    height: 100px;
+}
+input:hover::placeholder{
+    font-style: italic;
+}

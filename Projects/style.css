@@ -1,0 +1,15 @@
+.common {
+    font-family: 'Blender Pro';
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    background-color: orangered;
+    padding: 20px;
+    border: 2px solid orangered;
+    color: white;
+}
+
+.common:hover{
+    color:orangered;
+    background-color: transparent;
+}

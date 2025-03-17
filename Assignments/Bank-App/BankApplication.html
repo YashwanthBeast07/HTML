@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBI Online</title>
+    <link rel="stylesheet" href="BA.css">
+</head>
+<body style="background-color: rgb(223, 241, 251)" width="80%">
+    <table border="1px" width="100%">
+        <tr>
+            <td width="110px">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png" alt="" style="width: 110px;">
+            </td>
+            <td style="background-color: rgb(22, 100, 217);">
+                <h1 style="text-align: center; color: white; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">STATE BANK OF INDIA</h1>
+            </td>
+        </tr>
+    </table>
+    <h1 style="text-align: center;"><u>Account Opening Form</u></h1>
+    <form action="">
+    <h2 style="padding: 10px; border-radius: 10px;">Type of account</h2>
+    <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+        <legend style="font-size: 20px;"><strong>Type of Account</strong></legend><br>
+        <input type="radio" id="sb" value="sb" name="toa">
+        <label for="#sb">Savings Bank Account</label>
+        <input type="radio" id="current" value="current" name="toa">
+        <label for="#current">Current Account</label>
+        <input type="radio" id="bsbd" value="bsbd" name="toa">
+        <label for="#bsbd">BSBD</label>
+        <input type="radio" id="other" value="other" name="toa">
+        <label for="#other">(Others) : <input type="text" maxlength="10"></label>
+    </fieldset><br>
+
+    <h2 style="padding: 10px; border-radius: 10px;">Mode of Operation</h2>
+
+    <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+        <legend style="font-size: 20px;"><strong>Mode of Operation</strong></legend><br>
+        <input type="radio" id="self" value="self" name="moo">
+        <label for="#self">Self Only</label>
+        <input type="radio" id="Either" value="Either" name="moo">
+        <label for="#Either">Either or Survivor</label>
+        <input type="radio" id="former" value="former" name="moo">
+        <label for="#former">Former or Survivor</label>
+        <input type="radio" id="othermode" value="other" name="moo">
+        <label for="#othermode">(Others) : <input type="text" maxlength="10"></label>
+    </fieldset>
+
+
+    <h2 style="padding: 10px; border-radius: 10px;">Applicant Information</h2>
+
+    <!-- Personal Information Section -->
+    <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+        <legend style="font-size: 20px;"><strong>Personal Information</strong></legend><br>
+    
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br><br>
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br><br>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+    
+        <label>Are you a minor?</label>
+        <input type="radio" id="applicantMinorYes" name="applicantMinor" value="yes">
+        <label for="applicantMinorYes">Yes</label>
+        <input type="radio" id="applicantMinorNo" name="applicantMinor" value="no">
+        <label for="applicantMinorNo">No</label><br><br>
+    </fieldset><br>
+    
+    <!-- Address and Contact Information Section -->
+    <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+        <legend style="font-size: 20px;"><strong>Address and Contact Information</strong></legend><br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your full address" required></textarea><br><br>
+    </fieldset><br>
+
+    <!--Documents Required-->
+
+    <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+        <legend style="font-size: 20px;"><strong>Documents Required</strong></legend><br>
+        <label for="applicantPhoto">1. Upload Applicant Photo:</label>
+        <input type="file" name="applicantPhoto" id="applicantPhoto"><br><br>
+    
+        <label for="aadhar">2. Upload Aadhar Copy:</label>
+        <input type="file" name="aadhar" id="aadhar"><br><br>
+    
+        <label for="pan">3. Upload PAN Card Copy:</label>
+        <input type="file" name="pan" id="pan"><br><br>
+    
+        <label for="birthCert">4. Upload Birth Certificate:</label>
+        <input type="file" name="birthCert" id="birthCert"><br><br>
+    
+        <label for="incomeCasteCert">5. Upload Income & Caste Certificate:</label>
+        <input type="file" name="incomeCasteCert" id="incomeCasteCert"><br><br>
+    </fieldset><br>
+
+    <h2 style="padding: 10px; border-radius: 10px;">Services Required</h2>
+    <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+        <legend style="font-size: 20px;"><strong>ATM-CUM-DEBIT-CARD</strong></legend><br>
+        <label for="">For First Applicant:</label>
+        <label for="1Yes">Yes</label>
+        <input type="radio" id="1Yes" name="1sr">
+        <label for="1No">No</label>
+        <input type="radio" id="1No" name="1sr">
+        <input type="text" placeholder="If Yes, Name to be Printed on the Card" size="30px" maxlength="20"><br><br>
+
+        <!--For 2nd Applicanat-->
+
+        <label for="">For Second Applicant:</label>
+        <label for="2Yes">Yes</label>
+        <input type="radio" id="2Yes" name="2sr">
+        <label for="2No">No</label>
+        <input type="radio" id="2No" name="2sr">
+        <input type="text" placeholder="If Yes, Name to be Printed on the Card" size="30px" maxlength="20">
+    </fieldset><br>
+
+        <!-- Additional Services Required -->
+        <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+            <legend style="font-size: 20px;"><strong>Additional Services</strong></legend><br>
+        
+            <label for="checkbook">Checkbook:</label>
+            <input type="radio" id="checkbookYes" name="checkbook" value="yes">
+            <label for="checkbookYes">Yes</label>
+            <input type="radio" id="checkbookNo" name="checkbook" value="no">
+            <label for="checkbookNo">No</label><br><br>
+        
+            <label for="internetBanking">Internet Banking:</label>
+            <input type="radio" id="internetYes" name="internetBanking" value="yes">
+            <label for="internetYes">Yes</label>
+            <input type="radio" id="internetNo" name="internetBanking" value="no">
+            <label for="internetNo">No</label><br><br>
+        
+            <label for="smsAlerts">SMS Alerts:</label>
+            <input type="radio" id="smsYes" name="smsAlerts" value="yes">
+            <label for="smsYes">Yes</label>
+            <input type="radio" id="smsNo" name="smsAlerts" value="no">
+            <label for="smsNo">No</label><br><br>
+        
+            <label for="mobileBanking">Mobile Banking:</label>
+            <input type="radio" id="mobileYes" name="mobileBanking" value="yes">
+            <label for="mobileYes">Yes</label>
+            <input type="radio" id="mobileNo" name="mobileBanking" value="no">
+            <label for="mobileNo">No</label><br><br>
+        
+            <label for="sbiBuddy">Registration for SBI Buddy:</label>
+            <input type="radio" id="buddyYes" name="sbiBuddy" value="yes">
+            <label for="buddyYes">Yes</label>
+            <input type="radio" id="buddyNo" name="sbiBuddy" value="no">
+            <label for="buddyNo">No</label><br><br>
+        
+            <label for="passbook">Passbook Required:</label>
+            <input type="radio" id="passbookYes" name="passbook" value="yes">
+            <label for="passbookYes">Yes</label>
+            <input type="radio" id="passbookNo" name="passbook" value="no">
+            <label for="passbookNo">No</label><br><br>
+        
+            <label for="statementFrequency">Statement Frequency:</label>
+            <select id="statementFrequency" name="statementFrequency">
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="halfYearly">Half-Yearly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+        </fieldset>
+        
+        <h2 style="padding: 10px; border-radius: 10px;">Nominee Information</h2>
+        <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+            <legend style="font-size: 20px;"><strong>Nominee Details</strong></legend><br>
+        
+            <label for="nomineeName">Nominee's Full Name:</label>
+            <input type="text" id="nomineeName" name="nomineeName" placeholder="Enter nominee's full name" required><br><br>
+        
+            <label for="nomineeRelation">Relation with Nominee:</label>
+            <input type="text" id="nomineeRelation" name="nomineeRelation" placeholder="Enter relation (e.g., Father, Mother, Spouse)" required><br><br>
+        
+            <label for="nomineeDob">Nominee's Date of Birth:</label>
+            <input type="date" id="nomineeDob" name="nomineeDob" required><br><br>
+        
+            <label for="nomineeAddress">Nominee's Address:</label><br>
+            <textarea id="nomineeAddress" name="nomineeAddress" rows="4" cols="40" placeholder="Enter nominee's address" required></textarea><br><br>
+        
+            <label for="nomineePhone">Nominee's Phone Number:</label>
+            <input type="tel" id="nomineePhone" name="nomineePhone" placeholder="Enter phone number"><br><br>
+        
+            <label>Is the nominee a minor?</label>
+            <input type="radio" id="minorYes" name="nomineeMinor" value="yes">
+            <label for="minorYes">Yes</label>
+            <input type="radio" id="minorNo" name="nomineeMinor" value="no">
+            <label for="minorNo">No</label><br><br>
+        </fieldset><br>
+        <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+            <legend style="font-size: 20px;"><strong>Guardian Details (if nominee is a minor)</strong></legend><br>
+            <label for="guardianName">Guardian's Full Name:<label>
+            <input type="text" id="guardianName"name="guardianName" placeholder="Enter guardian'sname"><br><br>
+        
+            <label for="guardianRelation">Relation with Guardian:</label>
+            <input type="text" id="guardianRelation"name="guardianRelation" placeholder="Enterrelation"><br><br>
+        
+        </fieldset>
+        
+
+        <h2 style="padding: 10px; border-radius: 10px;">Terms and Conditions</h2>
+        <fieldset style="border-radius: 15px; background-color: whitesmoke;">
+            <legend style="font-size: 20px;"><strong>Conclusion</strong></legend><br>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="#terms">By Clicking the checkbox i confirm that I have read all the <a href="https://oaa.onlinesbi.sbi/sbijava/Terms_of_Use.html" target="_blank">Terms </a>and <a href="https://oaa.onlinesbi.sbi/sbijava/Terms_of_Use.html" target="_blank">Conditions </a> and I have agreed  to them</label>
+        </fieldset><br><br>
+
+        <input type="image" src="submit.png" width="150px" value="submit">
+    </form>
+</body>
+</html>

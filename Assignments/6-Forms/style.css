@@ -1,0 +1,284 @@
+h2{
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    font-family: "Anton", sans-serif;
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.3);
+    z-index: 5;
+}
+
+.containerNav div { 
+    padding: 20px 30px;
+    font-weight: 600;
+    border-right: 2px solid;
+}
+
+.containerNav div:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Main Image CSS Section */
+
+
+.mainImg{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.mainImg img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.outerParaContainer{
+    display: flex;
+    margin: 0;
+}
+
+.outerPara {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: justify;
+    padding: 10px 30px;
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    color: white;
+    height: 400px;
+}
+
+/* Main Image CSS end */
+
+
+/* Sub Headings */
+.h3heading{
+    background-color: black;
+    margin: 0;
+}
+
+.h3heading:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+h3{
+    font-family: "Anton", sans-serif;
+    padding: 20px;
+    color: white;
+    margin: 0px 20px;
+    font-size: 15px;
+}
+
+
+/* First Row */
+
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 30px;
+    z-index: 4;
+}
+.parent1 {
+    height: 500px;
+    width: 390px;
+    border-radius: 50% 50% 40% 40%;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/2025-lamborghini-urus-se-phev-106-67005496322ba.jpg?crop=0.633xw:0.534xh;0.223xw,0.427xh&resize=1200:*");
+    background-size: 120%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.parent1:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child1{
+    width: 300px;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 25px;
+    top: 250px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Blender Pro';
+}
+
+.parent2 {
+    height: 500px;
+    width: 390px;
+    border-radius: 50% 50% 40% 40%;
+    background-image: url("https://exoticcarhire.in/wp-content/uploads/2024/11/Mercedes-G-Wagon-1024x693.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.parent2:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child2{
+    width: 300px;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 25px;
+    top: 250px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Blender Pro';
+}
+
+.parent3 {
+    height: 500px;
+    width: 390px;
+    border-radius: 50% 50% 40% 40%;
+    background-image: url("https://www.bmw-sg.com/wp-content/uploads/2022/06/Pre-LCI-BMW-X7-Out-On-A-Mountain-Drive-3-1024x683.jpg");
+    background-size: 102%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.parent3:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child3{
+    width: 300px;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 25px;
+    top: 250px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Blender Pro';
+}
+
+
+/* Second Row */
+
+
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 30px;
+    z-index: 4;
+}
+.parent11 {
+    height: 500px;
+    width: 390px;
+    border-radius: 10px;
+    background-image: url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/aventador/svj/2021/03_19/aventador_svj_s2.jpg");
+    background-size: 150%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.parent11:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child11{
+    width: 300px;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 25px;
+    top: 250px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Blender Pro';
+}
+
+.parent21 {
+    height: 500px;
+    width: 390px;
+    border-radius: 10px;
+    background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/AMG-GT-Coupe/11053/1692608827675/front-left-side-47.jpg");
+    background-size: 104%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.parent21:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child21{
+    width: 300px;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 25px;
+    top: 250px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Blender Pro';
+}
+
+.parent31 {
+    height: 500px;
+    width: 390px;
+    border-radius: 10px;
+    background-image: url("https://etimg.etb2bimg.com/photo/109779285.cms");
+    background-size: 107%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.parent31:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child31{
+    width: 300px;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 25px;
+    top: 250px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Blender Pro';
+}

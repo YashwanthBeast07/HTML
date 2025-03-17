@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body style="background-color: rgb(192, 164, 126);">
+    <h1 style="font-size: 50px; text-align: center; background-color: rgb(244, 179, 179);padding: 10px; border-radius: 10px;"><marquee>My Personal Information Form</marquee></h1> 
+    <form action="">
+        <!-- Personal Information Section -->
+        <fieldset style="background-color: whitesmoke; border-radius: 20px;">
+            <legend style="font-size: 30px; background-color: rgb(121, 33, 33); color: aliceblue; padding: 10px; border-radius: 10px;"><strong>Personal Information</strong></legend><br>
+        
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br><br>
+        
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br><br>
+        
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+            <label for="gender">Select your Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="Others">
+            <label for="others">Others</label><br><br>
+
+            <label for="color">Choose your Favorite Color:</label>
+            <input type="color" name="color" id="color"><br><br>
+
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Write about yourself"></textarea><br><br>
+        </fieldset><br>
+        
+        <!-- Address and Contact Information Section -->
+        <fieldset style="background-color: whitesmoke; border-radius: 20px;">
+            <legend style="font-size: 30px; background-color: rgb(121, 33, 33); color: aliceblue; padding: 10px; border-radius: 10px;"><strong>Address and Contact Information</strong></legend><br>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your full address" required></textarea><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="Enter your state" required><br><br>
+
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code" required><br><br>
+        </fieldset><br>
+
+        <!-- Family Information -->
+        <fieldset  style="background-color: whitesmoke; border-radius: 20px;">
+            <legend style="font-size: 30px; background-color: rgb(121, 33, 33); color: aliceblue; padding: 10px; border-radius: 10px;"><strong>Family Information</strong></legend><br>
+        
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name" required><br><br>
+        
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" placeholder="Enter your mother's name" required><br><br>
+        
+            <label for="spouse_name">Spouse's Name:</label>
+            <input type="text" id="spouse_name" name="spouse_name" placeholder="Enter your spouse's name (if applicable)"><br><br>
+        
+            <label for="siblings">Number of Siblings:</label>
+            <input type="number" id="siblings" name="siblings" placeholder="Enter number of siblings" required><br><br>
+
+            <label for="married">Marital Status:</label><br>
+            <input type="checkbox" id="married" name="married">
+            <label for="married">Married</label><br><br>
+        </fieldset><br>
+
+        <!-- Account Information -->
+        <fieldset  style="background-color: whitesmoke; border-radius: 20px; ">
+            <legend style="font-size: 30px; background-color: rgb(121, 33, 33); color: aliceblue;padding: 10px; border-radius: 10px;"><strong>Account Information</strong></legend><br>
+        
+            <label for="account_number">Bank Account Number:</label>
+            <input type="password" id="account_number" name="account_number" placeholder="Enter your account number" required><br><br>
+        
+            <label for="ifsc">IFSC Code:</label>
+            <input type="text" id="ifsc" name="ifsc" placeholder="Enter IFSC code" required><br><br>
+        
+            <label for="bank_name">Bank Name:</label>
+            <input type="text" id="bank_name" name="bank_name" placeholder="Enter your bank name" required><br><br>
+        
+            <label for="branch">Branch Name:</label>
+            <input type="text" id="branch" name="branch" placeholder="Enter branch name" required><br><br>
+
+            <label for="account_type">Account Type:</label>
+            <select id="account_type" name="account_type">
+                <option value="savings">Savings</option>
+                <option value="current">Current</option>
+                <option value="fixed">Fixed Deposit</option>
+            </select><br><br>
+        </fieldset><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
